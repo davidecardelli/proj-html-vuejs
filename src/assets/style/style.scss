@@ -1,1 +1,15 @@
 @use'./partials/variables' as *;
+
+a {
+    color: $grey;
+    text-decoration: none;
+
+    &.selected,
+    &:hover {
+        color: $white;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
