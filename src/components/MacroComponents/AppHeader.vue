@@ -23,7 +23,7 @@ export default {
             <logo></logo>
             <nav>
                 <ul class="d-flex align-items-center m-0">
-                    <li v-for="voice in this.headerMenu">
+                    <li v-for="voice in this.headerMenu" :key="voice.id">
                         <a :href="voice.url" class="ms-3" :class="{ 'selected': voice.current }">{{ voice.text }}</a>
                         <span v-if="voice.isNew" class="is-new ms-2">new</span>
                     </li>
