@@ -39,4 +39,25 @@ const headerMenu = [
     },
 ];
 
-export { headerMenu }
+const challengeCard = [
+    {
+        id: 1,
+        title: 'Crossfit workout',
+        subtitle: 'Push your limits',
+        img: '../../assets/img/service6-2x.jpg',
+    }, {
+
+        id: 2,
+        title: 'New Gym Apparel',
+        subtitle: 'Look good, feel good',
+        img: '../../assets/img/box1-2x.jpg',
+    }, {
+
+        id: 3,
+        title: 'Team training',
+        subtitle: 'Find a partner',
+        img: '../../assets/img/box3-2x.jpg',
+    }
+];
+
+export { headerMenu, challengeCard }
