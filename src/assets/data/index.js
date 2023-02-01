@@ -41,6 +41,28 @@ const headerMenu = [
     },
 ];
 
+// Dati statici Playlist section \\
+const playlistCard = [
+    {
+        id: 1,
+        title: 'Thighs & glute workout',
+        subtitle: 'Increase your mobility',
+        img: 'video2-2x',
+    }, {
+        id: 2,
+        title: 'Lift, firm & perk up ',
+        subtitle: 'Feel young again',
+        img: 'video7-2x',
+
+    }, {
+        id: 3,
+        title: 'Slim & trim your waist',
+        subtitle: 'Shed those extra pounds',
+        img: 'video9-2x',
+    }
+
+]
+
 // Dati statici team \\
 const teamCard = [
     {
@@ -154,4 +176,4 @@ const recentPost = [
 ]
 
 
-export { headerMenu, challengeCard, social, recentPost, partnersCard, articlesBlog, teamCard }
+export { headerMenu, challengeCard, social, recentPost, partnersCard, articlesBlog, teamCard, playlistCard }

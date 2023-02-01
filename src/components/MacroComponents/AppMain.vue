@@ -3,11 +3,12 @@ import FirstSectionCard from '../MicroComponents/FirstSectionCard.vue';
 import PartnersCard from '../MicroComponents/PartnersCard.vue';
 import BlogCard from '../MicroComponents/BlogCard.vue';
 import TeamCard from '../MicroComponents/TeamCard.vue';
-import { challengeCard, partnersCard, articlesBlog, teamCard } from '../../assets/data';
+import PlaylistCard from '../MicroComponents/PlaylistCard.vue'
+import { challengeCard, partnersCard, articlesBlog, teamCard, playlistCard } from '../../assets/data';
 export default {
     name: 'AppMain',
-    components: { FirstSectionCard, PartnersCard, BlogCard, TeamCard },
-    data() { return { challengeCard, partnersCard, articlesBlog, teamCard } },
+    components: { FirstSectionCard, PartnersCard, BlogCard, TeamCard, PlaylistCard },
+    data() { return { challengeCard, partnersCard, articlesBlog, teamCard, playlistCard } },
     props: {
     },
     computed: {
@@ -44,6 +45,40 @@ export default {
         </section>
         <!-- End First Section -->
 
+        <!-- Playlist Section -->
+        <section id="playlist">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h6 class="m-0">Last articles</h6>
+                    <a href="#">
+                        <span>Read all article</span>
+                        <i class="fa-solid fa-angle-right ms-1"></i>
+                    </a>
+                </div>
+                <div class="row row-cols-3">
+                    <playlist-card v-for="video in playlistCard" :key="video.id" :item="video"></playlist-card>
+                </div>
+            </div>
+        </section>
+        <!-- End Playlist Section -->
+
+        <!-- Newsletter Section -->
+        <section id="newsletter">
+            <div class="jumbotron">
+                <div class="container">
+                    <div class="col-8 py-5">
+                        <h2 class="mb-4">Join our mailing list today</h2>
+                        <h1 class="mb-4">Insider offers & flash sales in your inbox every week.</h1>
+                        <i class="fa-solid fa-wave-square mb-4"></i>
+                        <p>QUI CI VA IL FORM</p>
+                        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet,
+                            consectetur adipiscing elit sed porttitor lectus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Newsletter Section -->
+
         <!-- Team Section -->
         <section id="team">
             <div class="container">
@@ -73,9 +108,11 @@ export default {
             <div class="jumbotron">
                 <div class="container">
                     <div class="content-jumbotron text-center">
-                        <h2 class="mb-3">“I’ve failed over and over again in my life. And that is why I succeed.”</h2>
+                        <h2 class="mb-3">“I’ve failed over and over again in my life. And that is why I succeed.”
+                        </h2>
                         <i class="fa-solid fa-wave-square mb-4"></i>
-                        <p> Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed
+                        <p> Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec
+                            sed
                             massa
                             in
                             ipsum eros, tristique. Gravida suspendisse etiam in iaculis
@@ -161,6 +198,48 @@ export default {
             font-size: 1.2rem;
 
         }
+    }
+}
+
+#playlist {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    a {
+        color: $black;
+        font-size: 0.7rem;
+
+        i {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+#newsletter {
+    background-image: linear-gradient(90deg, $black 45%, rgba(6, 6, 7, 0) 70%), url(../../assets/img/banner1-2x.jpg);
+    background-size: cover;
+    background-position: top center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    h1 {
+        color: $white;
+        font-size: 3rem;
+    }
+
+    h2 {
+        color: $red;
+        font-size: 1.5rem;
+    }
+
+    i {
+        color: $yellow;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        font-weight: 400;
     }
 }
 
