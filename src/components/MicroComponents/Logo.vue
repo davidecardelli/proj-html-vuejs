@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <div id="logo">
+    <div class="logo">
         <img src="../../assets/img/logo.png" alt="logo">
     </div>
 

@@ -1,4 +1,6 @@
 // Creao questo index.js con i miei dati statici
+
+// Dati statici Header \\
 const headerMenu = [
     {
         id: 0,
@@ -39,6 +41,7 @@ const headerMenu = [
     },
 ];
 
+// Dati statici First Section \\
 const challengeCard = [
     {
         id: 1,
@@ -60,4 +63,17 @@ const challengeCard = [
     }
 ];
 
-export { headerMenu, challengeCard }
+// Dati statici Footer \\
+
+const social = ['fa-facebook', 'fa-twitter', 'fa-youtube', 'fa-instagram', 'fa-linkedin'];
+
+const recentPost = [
+    'The best protein shake',
+    'Ultimate cardio workout',
+    'New juices avaiable now',
+    'Tips to find training partners',
+    '20 best healthy recipes'
+]
+
+
+export { headerMenu, challengeCard, social, recentPost }
