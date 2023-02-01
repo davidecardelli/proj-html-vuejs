@@ -1,11 +1,12 @@
 <script>
 import FirstSectionCard from '../MicroComponents/FirstSectionCard.vue';
 import PartnersCard from '../MicroComponents/PartnersCard.vue';
-import { challengeCard, partnersCard } from '../../assets/data';
+import BlogCard from '../MicroComponents/BlogCard.vue';
+import { challengeCard, partnersCard, articlesBlog } from '../../assets/data';
 export default {
     name: 'AppMain',
-    components: { FirstSectionCard, PartnersCard },
-    data() { return { challengeCard, partnersCard } },
+    components: { FirstSectionCard, PartnersCard, BlogCard },
+    data() { return { challengeCard, partnersCard, articlesBlog } },
     props: {
     },
     computed: {
@@ -41,6 +42,22 @@ export default {
             </div>
         </section>
         <!-- End First Section -->
+
+        <!-- Blog section -->
+        <section id="blog">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h6 class="m-0">Last articles</h6>
+                    <a href="#">
+                        <span>Read all article</span>
+                        <i class="fa-solid fa-angle-right ms-1"></i>
+                    </a>
+                </div>
+                <div class="row row-cols-3">
+                    <blog-card v-for="article in articlesBlog" :key="article.id" :item="article"></blog-card>
+                </div>
+            </div>
+        </section>
 
         <!-- Buy section -->
         <section id="buy">
@@ -134,6 +151,20 @@ export default {
             font-weight: 500;
             font-size: 1.2rem;
 
+        }
+    }
+}
+
+#blog {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    a {
+        color: $black;
+        font-size: 0.7rem;
+
+        i {
+            font-size: 0.7rem;
         }
     }
 }

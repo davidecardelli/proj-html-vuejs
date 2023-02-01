@@ -41,6 +41,29 @@ const headerMenu = [
     },
 ];
 
+// Dati statici blog \\
+
+const articlesBlog = [
+    {
+        id: 1,
+        title: 'The best protein shake',
+        date: 'By admin | November 26th, 2019 | Gym',
+        img: 'blog4-2x',
+    }, {
+        id: 2,
+        title: 'Ultimate cardio workout',
+        date: 'By admin | November 26th, 2019 | Gym',
+        img: 'blog1-2x',
+
+    }, {
+        id: 3,
+        title: 'New juices available now',
+        date: 'By admin | November 26th, 2019 | Gym',
+        img: 'blog3-2x',
+    }
+
+]
+
 // Dati statici First Section \\
 const challengeCard = [
     {
@@ -104,4 +127,4 @@ const recentPost = [
 ]
 
 
-export { headerMenu, challengeCard, social, recentPost, partnersCard }
+export { headerMenu, challengeCard, social, recentPost, partnersCard, articlesBlog }
