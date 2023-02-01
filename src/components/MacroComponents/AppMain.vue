@@ -41,6 +41,22 @@ export default {
         </section>
         <!-- End First Section -->
 
+        <!-- Sixth section -->
+        <section id="sixth-section">
+            <div class="jumbotron">
+                <div class="content-jumbotron text-center">
+                    <p>PLAY</p>
+                    <h2 class="mb-4">Crossfit workout of the day</h2>
+                    <h3 class="mb-4">November 15th, 2019</h3>
+                    <a href="#">
+                        <span>View all videos</span>
+                        <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <!-- Sixth section -->
 
 
     </main>
@@ -48,6 +64,7 @@ export default {
 
 <style lang="scss" scoped>
 @use'../../assets/style/partials/variables' as *;
+@use'../../assets/style/style.scss';
 
 #first-section {
     background: linear-gradient(130deg, $blue, $red);
@@ -88,4 +105,29 @@ export default {
         }
     }
 }
+
+#sixth-section {
+    .jumbotron {
+        background-image: linear-gradient(150deg, rgba(65, 84, 255, 0.6) 35%, rgba(255, 65, 75, 0.6) 100%), url(../../assets/img/banner14-2x.jpg);
+        background-size: cover;
+        background-position: bottom center;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+
+        h2 {
+            color: $white;
+            font-size: 3rem;
+        }
+
+        h3 {
+            color: $yellow;
+            font-size: 2.5rem;
+        }
+
+        a {
+            color: $white;
+        }
+    }
+}
 </style>
+
