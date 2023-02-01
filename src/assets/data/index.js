@@ -63,6 +63,34 @@ const challengeCard = [
     }
 ];
 
+// Dati statici Fifth Section \\
+const partnersCard = [
+    {
+        id: 1,
+        text: 'Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.',
+        link: 'Visit Yoga Studio',
+        img: 'sponsor-1-2x-200x103'
+    }, {
+
+        id: 2,
+        text: 'Feugia etiam dui mauris pharetra mauris sed pharetra. Convallis sapien ornare cras faucibus nulla porta dui a.',
+        link: 'Join Fitness Center',
+        img: 'sponsor-2-2x-200x103'
+    }, {
+
+        id: 3,
+        text: 'Nisl at quam adipiscing montes, nec, adipiscing commodo aliquam tincidunt. Ligula in habitant et sagittis imperdiet.',
+        link: 'Learn about FC',
+        img: 'sponsor-3-2x-200x103'
+    }, {
+
+        id: 4,
+        text: 'Proin in viverra maecenas et mattius ut nibh enim. Gravida ultricies mi porta lacus. Et posuere velit sed nec eleifend.',
+        link: 'Visit Power Gym',
+        img: 'sponsor-4-2x-200x103'
+    }
+]
+
 // Dati statici Footer \\
 
 const social = ['fa-facebook', 'fa-twitter', 'fa-youtube', 'fa-instagram', 'fa-linkedin'];
@@ -76,4 +104,4 @@ const recentPost = [
 ]
 
 
-export { headerMenu, challengeCard, social, recentPost }
+export { headerMenu, challengeCard, social, recentPost, partnersCard }

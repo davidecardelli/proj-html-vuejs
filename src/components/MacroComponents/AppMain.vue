@@ -1,10 +1,11 @@
 <script>
 import FirstSectionCard from '../MicroComponents/FirstSectionCard.vue';
-import { challengeCard } from '../../assets/data';
+import PartnersCard from '../MicroComponents/PartnersCard.vue';
+import { challengeCard, partnersCard } from '../../assets/data';
 export default {
     name: 'AppMain',
-    components: { FirstSectionCard },
-    data() { return { challengeCard } },
+    components: { FirstSectionCard, PartnersCard },
+    data() { return { challengeCard, partnersCard } },
     props: {
     },
     computed: {
@@ -19,8 +20,8 @@ export default {
     <main>
 
         <!-- First Section -->
-        <section id="first-section" class="text-center">
-            <div class="container">
+        <section id="first-section">
+            <div class="container text-center">
                 <div class="row row-cols-3 px-5 pb-5">
                     <first-section-card v-for="card in this.challengeCard" :key="card.id"
                         :item="card"></first-section-card>
@@ -41,8 +42,19 @@ export default {
         </section>
         <!-- End First Section -->
 
-        <!-- Sixth section -->
-        <section id="sixth-section">
+        <!-- Sponsor section -->
+        <section id="sponsor">
+            <div class="container">
+                <div class="row row-cols-4">
+                    <partners-card v-for="partner in this.partnersCard" :key="partner.id"
+                        :item="partner"></partners-card>
+                </div>
+            </div>
+        </section>
+        <!-- End Sponsor Section -->
+
+        <!-- Workout of the day section -->
+        <section id="workout-of-the-day">
             <div class="jumbotron">
                 <div class="content-jumbotron text-center">
                     <p>PLAY</p>
@@ -56,7 +68,7 @@ export default {
             </div>
 
         </section>
-        <!-- Sixth section -->
+        <!-- End Workout of the day section -->
 
 
     </main>
@@ -106,7 +118,13 @@ export default {
     }
 }
 
-#sixth-section {
+#sponsor {
+    background-color: $white;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+#workout-of-the-day {
     .jumbotron {
         background-image: linear-gradient(150deg, rgba(65, 84, 255, 0.6) 35%, rgba(255, 65, 75, 0.6) 100%), url(../../assets/img/banner14-2x.jpg);
         background-size: cover;
