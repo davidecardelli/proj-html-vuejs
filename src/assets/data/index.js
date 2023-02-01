@@ -41,8 +41,35 @@ const headerMenu = [
     },
 ];
 
-// Dati statici blog \\
+// Dati statici team \\
+const teamCard = [
+    {
+        id: 1,
+        title: 'Team Training',
+        subtitle: 'Find a partner',
+        text: 'Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.',
+        link: 'Find a partner',
+        icon: 'fa-solid fa-clock',
+    }, {
+        id: 2,
+        title: 'Crossfit Workout',
+        subtitle: 'Push your limits',
+        text: 'Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.',
+        link: 'Learn about Crossfit',
+        icon: 'fa-solid fa-dumbbell',
 
+    }, {
+        id: 3,
+        title: 'Weight Loss Plan',
+        subtitle: 'Shed those pounds',
+        text: 'Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.',
+        link: 'Schedule a workout',
+        icon: 'fa-solid fa-child-dress',
+
+    }
+]
+
+// Dati statici blog \\
 const articlesBlog = [
     {
         id: 1,
@@ -127,4 +154,4 @@ const recentPost = [
 ]
 
 
-export { headerMenu, challengeCard, social, recentPost, partnersCard, articlesBlog }
+export { headerMenu, challengeCard, social, recentPost, partnersCard, articlesBlog, teamCard }

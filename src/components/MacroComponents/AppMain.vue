@@ -2,11 +2,12 @@
 import FirstSectionCard from '../MicroComponents/FirstSectionCard.vue';
 import PartnersCard from '../MicroComponents/PartnersCard.vue';
 import BlogCard from '../MicroComponents/BlogCard.vue';
-import { challengeCard, partnersCard, articlesBlog } from '../../assets/data';
+import TeamCard from '../MicroComponents/TeamCard.vue';
+import { challengeCard, partnersCard, articlesBlog, teamCard } from '../../assets/data';
 export default {
     name: 'AppMain',
-    components: { FirstSectionCard, PartnersCard, BlogCard },
-    data() { return { challengeCard, partnersCard, articlesBlog } },
+    components: { FirstSectionCard, PartnersCard, BlogCard, TeamCard },
+    data() { return { challengeCard, partnersCard, articlesBlog, teamCard } },
     props: {
     },
     computed: {
@@ -43,6 +44,14 @@ export default {
         </section>
         <!-- End First Section -->
 
+        <!-- Team Section -->
+        <section id="team">
+            <div class="container">
+                <div class="row row-cols-3">
+                    <team-card v-for="activities in this.teamCard" :key="activities.id" :item="activities"></team-card>
+                </div>
+            </div>
+        </section>
         <!-- Blog section -->
         <section id="blog">
             <div class="container">
@@ -153,6 +162,12 @@ export default {
 
         }
     }
+}
+
+#team {
+    background-color: $black;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
 #blog {
