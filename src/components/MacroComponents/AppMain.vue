@@ -23,7 +23,7 @@ export default {
     <main>
 
         <!-- First Section -->
-        <section id="first-section">
+        <section id="review">
             <div class="container text-center">
                 <div class="row row-cols-3 px-5 pb-5">
                     <first-section-card v-for="card in this.challengeCard" :key="card.id"
@@ -158,8 +158,8 @@ export default {
         </section>
         <!-- End Buy section -->
 
-        <!-- Sponsor section -->
-        <section id="sponsor">
+        <!-- Partner section -->
+        <section id="partner">
             <div class="container">
                 <div class="row row-cols-4">
                     <partners-card v-for="partner in this.partnersCard" :key="partner.id"
@@ -167,7 +167,7 @@ export default {
                 </div>
             </div>
         </section>
-        <!-- End Sponsor Section -->
+        <!-- End Partner Section -->
 
         <!-- Workout of the day section -->
         <section id="workout-of-the-day">
@@ -194,7 +194,7 @@ export default {
 @use'../../assets/style/partials/variables' as *;
 @use'../../assets/style/style.scss';
 
-#first-section {
+#review {
     background: linear-gradient(130deg, $blue, $red);
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -374,7 +374,7 @@ export default {
     }
 }
 
-#sponsor {
+#partner {
     background-color: $white;
     padding-top: 7rem;
     padding-bottom: 7rem;

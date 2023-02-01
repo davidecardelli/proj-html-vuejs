@@ -89,6 +89,7 @@ header {
             }
 
             p {
+                color: $grey;
                 font-size: 1.3rem;
                 font-weight: 400;
             }

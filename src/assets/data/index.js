@@ -1,6 +1,6 @@
-// Creao questo index.js con i miei dati statici
+// ! All static data:
 
-// Dati statici Header \\
+// Header static data \\
 const headerMenu = [
     {
         id: 0,
@@ -41,7 +41,29 @@ const headerMenu = [
     },
 ];
 
-// Dati statici Playlist section \\
+// Review static data \\
+const challengeCard = [
+    {
+        id: 1,
+        title: 'Crossfit workout',
+        subtitle: 'Push your limits',
+        img: 'service6-2x',
+    }, {
+
+        id: 2,
+        title: 'New Gym Apparel',
+        subtitle: 'Look good, feel good',
+        img: 'box1-2x',
+    }, {
+
+        id: 3,
+        title: 'Team training',
+        subtitle: 'Find a partner',
+        img: 'box3-2x',
+    }
+];
+
+// Playlist static data \\
 const playlistCard = [
     {
         id: 1,
@@ -63,7 +85,7 @@ const playlistCard = [
 
 ]
 
-// Dati statici team \\
+// Team static data \\
 const teamCard = [
     {
         id: 1,
@@ -91,7 +113,7 @@ const teamCard = [
     }
 ]
 
-// Dati statici blog \\
+// Blog static data \\
 const articlesBlog = [
     {
         id: 1,
@@ -113,29 +135,9 @@ const articlesBlog = [
 
 ]
 
-// Dati statici First Section \\
-const challengeCard = [
-    {
-        id: 1,
-        title: 'Crossfit workout',
-        subtitle: 'Push your limits',
-        img: 'service6-2x',
-    }, {
 
-        id: 2,
-        title: 'New Gym Apparel',
-        subtitle: 'Look good, feel good',
-        img: 'box1-2x',
-    }, {
 
-        id: 3,
-        title: 'Team training',
-        subtitle: 'Find a partner',
-        img: 'box3-2x',
-    }
-];
-
-// Dati statici Fifth Section \\
+// Partner static data \\
 const partnersCard = [
     {
         id: 1,
@@ -163,7 +165,7 @@ const partnersCard = [
     }
 ]
 
-// Dati statici Footer \\
+// Footer static data \\
 
 const social = ['fa-facebook', 'fa-twitter', 'fa-youtube', 'fa-instagram', 'fa-linkedin'];
 
@@ -175,5 +177,5 @@ const recentPost = [
     '20 best healthy recipes'
 ]
 
-
+// ! Export my static data to be able to use it in the various components
 export { headerMenu, challengeCard, social, recentPost, partnersCard, articlesBlog, teamCard, playlistCard }
