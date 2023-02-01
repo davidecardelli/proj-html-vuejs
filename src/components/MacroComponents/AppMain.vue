@@ -42,6 +42,26 @@ export default {
         </section>
         <!-- End First Section -->
 
+        <!-- Buy section -->
+        <section id="buy">
+            <div class="jumbotron">
+                <div class="container">
+                    <div class="content-jumbotron text-center">
+                        <h2 class="mb-3">“I’ve failed over and over again in my life. And that is why I succeed.”</h2>
+                        <i class="fa-solid fa-wave-square mb-4"></i>
+                        <p> Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed
+                            massa
+                            in
+                            ipsum eros, tristique. Gravida suspendisse etiam in iaculis
+                        </p>
+                        <p>BOTTONE</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End Buy section -->
+
         <!-- Sponsor section -->
         <section id="sponsor">
             <div class="container">
@@ -115,6 +135,39 @@ export default {
             font-size: 1.2rem;
 
         }
+    }
+}
+
+#buy {
+    .jumbotron {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 35%, rgba(0, 0, 0, 0.9) 100%), url(../../assets/img/banner2-2x.jpg);
+        background-size: cover;
+        background-position: bottom center;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+
+        .content-jumbotron {
+            padding-left: 9rem;
+            padding-right: 9rem;
+
+            h2 {
+                color: $white;
+                font-size: 3rem;
+            }
+
+            i {
+                color: $yellow;
+                font-size: 3rem;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+        }
+
+
     }
 }
 
