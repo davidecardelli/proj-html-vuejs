@@ -45,6 +45,39 @@ export default {
         </section>
         <!-- End First Section -->
 
+        <!-- Youtube Section -->
+        <section id="youtube" class="d-flex">
+            <div class="col-6">
+                <img src="../../assets/img/service15-2x.jpg" alt="Youtube Video" class="img-fluid">
+            </div>
+            <div class="col-6 col-right d-flex flex-column justify-content-center">
+                <h5 class="mb-5">Tune up your workouts</h5>
+                <h2 class="mb-5">The best health & fitness advice online</h2>
+                <div class="d-flex mb-5">
+                    <img src="../../assets/img/unnamed.jpg" alt="Unnamed">
+                    <div class="ms-2">
+                        <p class="m-0">Theme Fusion</p>
+                        <div class="d-flex">
+                            <a href="#" class="btn-youtube-primary px-1">
+                                <i class="fa-brands fa-youtube"></i>
+                                Youtube
+                            </a>
+                            <a href="#" class="btn-youtube-secondary px-1">
+                                999+
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <h6 class="mb-5">Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo
+                    integer sit
+                    pellentesque.</h6>
+                <p>QUI CI VA UN BOTTONE</p>
+
+            </div>
+        </section>
+        <!-- End Youtube Section -->
+
         <!-- Playlist Section -->
         <section id="playlist">
             <div class="container">
@@ -201,6 +234,50 @@ export default {
     }
 }
 
+#youtube {
+    background-color: $white;
+
+    img {
+        border-radius: 0 0 20% 0;
+    }
+
+    .col-right {
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        h5 {
+            font-size: 1.5rem;
+            color: $blue;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        h6 {
+            font-size: 1.3rem;
+            color: $grey;
+            font-weight: normal;
+        }
+
+
+        p {
+            font-size: 0.7rem;
+        }
+
+        .btn-youtube-primary {
+            color: white;
+            background-color: $red;
+        }
+
+        .btn-youtube-secondary {
+            padding: 1px;
+            color: $black;
+            border: 1px solid $black;
+        }
+    }
+}
+
 #playlist {
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -238,6 +315,7 @@ export default {
     }
 
     p {
+        color: $grey;
         font-size: 1.3rem;
         font-weight: 400;
     }
