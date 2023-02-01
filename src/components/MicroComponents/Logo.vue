@@ -18,7 +18,9 @@ export default {
 
 <template>
     <div class="logo">
-        <img src="../../assets/img/logo.png" alt="logo">
+        <a href="#">
+            <img src="../../assets/img/logo.png" alt="logo">
+        </a>
     </div>
 
 </template>
