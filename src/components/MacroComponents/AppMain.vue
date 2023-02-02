@@ -152,7 +152,7 @@ export default {
                             in
                             ipsum eros, tristique. Gravida suspendisse etiam in iaculis
                         </p>
-                        <p>BOTTONE</p>
+                        <general-button text="Buy Avada today" after="fa-solid fa-angle-right"></general-button>
                     </div>
                 </div>
             </div>
