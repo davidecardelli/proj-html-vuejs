@@ -13,7 +13,7 @@ export default {
     },
     methods: {
     },
-    emits: ['button-click'],
+    emits: ['play-button-click'],
 }
 
 
@@ -21,7 +21,7 @@ export default {
 
 <template>
     <a href="#">
-        <i class="fa-solid fa-circle-play primary" :class="[size, position]"></i>
+        <i class="fa-solid fa-circle-play primary" :class="[size, position]" @click="$emit('play-button-click')"></i>
     </a>
 </template>
 
