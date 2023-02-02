@@ -1,5 +1,9 @@
 @use'./partials/variables' as *;
 
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
 a {
     color: $grey;
     text-decoration: none;
