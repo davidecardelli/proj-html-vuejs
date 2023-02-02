@@ -4,10 +4,11 @@ import PartnersCard from '../MicroComponents/PartnersCard.vue';
 import BlogCard from '../MicroComponents/BlogCard.vue';
 import TeamCard from '../MicroComponents/TeamCard.vue';
 import PlaylistCard from '../MicroComponents/PlaylistCard.vue'
+import GeneralButton from '../MicroComponents/GeneralButton.vue';
 import { challengeCard, partnersCard, articlesBlog, teamCard, playlistCard } from '../../assets/data';
 export default {
     name: 'AppMain',
-    components: { FirstSectionCard, PartnersCard, BlogCard, TeamCard, PlaylistCard },
+    components: { FirstSectionCard, PartnersCard, BlogCard, TeamCard, PlaylistCard, GeneralButton },
     data() { return { challengeCard, partnersCard, articlesBlog, teamCard, playlistCard } },
     props: {
     },
@@ -50,7 +51,7 @@ export default {
             <div class="col-6">
                 <img src="../../assets/img/service15-2x.jpg" alt="Youtube Video" class="img-fluid">
             </div>
-            <div class="col-6 col-right d-flex flex-column justify-content-center">
+            <div class="col-6 col-right">
                 <h5 class="mb-5">Tune up your workouts</h5>
                 <h2 class="mb-5">The best health & fitness advice online</h2>
                 <div class="d-flex mb-5">
@@ -72,7 +73,8 @@ export default {
                 <h6 class="mb-5">Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo
                     integer sit
                     pellentesque.</h6>
-                <p>QUI CI VA UN BOTTONE</p>
+                <general-button text="Visit my YouTube channel" type="youtube"
+                    before="fa-brands fa-youtube"></general-button>
 
             </div>
         </section>
@@ -244,6 +246,7 @@ export default {
     .col-right {
         padding-left: 4rem;
         padding-right: 4rem;
+        padding-top: 10rem;
 
         h5 {
             font-size: 1.5rem;
