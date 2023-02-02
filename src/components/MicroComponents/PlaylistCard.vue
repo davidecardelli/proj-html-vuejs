@@ -16,6 +16,9 @@ export default {
         }
     },
     methods: {
+        playVideo() {
+            console.log('Play Video')
+        }
     },
 }
 
@@ -26,7 +29,7 @@ export default {
     <div class="col">
         <div class="position-relative">
             <img :src="getImageUrl" :alt="item.link" class="img-fluid mb-3">
-            <play-button size="small" position="absolute"></play-button>
+            <play-button size="small" position="absolute" @play-button-click="playVideo"></play-button>
         </div>
         <div class="article-content">
             <a href="#">

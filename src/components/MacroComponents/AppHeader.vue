@@ -14,6 +14,9 @@ export default {
     computed: {
     },
     methods: {
+        playVideo() {
+            console.log('Play Video')
+        }
     },
 }
 </script>
@@ -61,7 +64,7 @@ export default {
                         </div>
                     </div>
                     <div class="col-4 d-flex align-items-center justify-content-center">
-                        <play-button></play-button>
+                        <play-button @play-button-click="playVideo"></play-button>
                     </div>
                 </div>
             </div>
