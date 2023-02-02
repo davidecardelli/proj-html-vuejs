@@ -67,5 +67,9 @@ export default {
             font-size: 0.7rem;
         }
     }
+
+    &:hover {
+        scale: 1.1;
+    }
 }
 </style>
