@@ -19,6 +19,10 @@ export default {
     methods: {
         updateMail(mail) {
             this.emailEntered = mail;
+        },
+
+        playVideo() {
+            console.log('Play Video')
         }
     },
 }
@@ -55,7 +59,7 @@ export default {
             <div class="col-6">
                 <div class="position-relative">
                     <img src="../../assets/img/service15-2x.jpg" alt="Youtube Video" class="img-fluid">
-                    <play-button size="medium" position="absolute"></play-button>
+                    <play-button size="medium" position="absolute" @play-button-click="playVideo"></play-button>
                 </div>
             </div>
             <div class="col-6 col-right">
@@ -183,7 +187,7 @@ export default {
         <section id="workout-of-the-day">
             <div class="jumbotron">
                 <div class="content-jumbotron text-center">
-                    <play-button></play-button>
+                    <play-button @play-button-click="playVideo"></play-button>
                     <h2 class="mt-4 mb-4">Crossfit workout of the day</h2>
                     <h3 class="mb-4">November 15th, 2019</h3>
                     <a href="#">
