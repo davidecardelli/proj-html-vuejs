@@ -51,7 +51,7 @@ export default {
                         game,
                         whether you are a winner or a loser.”</h3>
                     <i class="fa-solid fa-wave-square mb-2"></i>
-                    <div class="customer-reviewer d-flex justify-content-center align-items-center">
+                    <div class="customer-reviewer d-flex justify-content-center align-items-center mb-3">
                         <img src="../../assets/img/avatar-1-2x.jpg" alt="Brad Johnson">
                         <p class="name m-0 ps-3">Brad Johnson</p>
                         <p class="city m-0 ps-3">Las Vegas</p>
@@ -63,16 +63,15 @@ export default {
 
         <!-- Youtube Section -->
         <section id="youtube" class="d-flex">
-            <div class="col-6">
-                <div class="position-relative">
-                    <img src="../../assets/img/service15-2x.jpg" alt="Youtube Video" class="img-fluid">
-                    <play-button size="medium" position="absolute" @play-button-click="playVideo"></play-button>
+            <div class="col-6 position-relative">
+                <div class="col-left d-flex align-items-center justify-content-center h-100">
+                    <play-button size="medium" @play-button-click="playVideo"></play-button>
                 </div>
             </div>
             <div class="col-6 col-right">
-                <h5 class="mb-5">Tune up your workouts</h5>
-                <h2 class="mb-5">The best health & fitness advice online</h2>
-                <div class="d-flex mb-5">
+                <h5 class="mb-4">Tune up your workouts</h5>
+                <h2 class="mb-4">The best health & fitness advice online</h2>
+                <div class="d-flex mb-4">
                     <img src="../../assets/img/unnamed.jpg" alt="Unnamed">
                     <div class="ms-2">
                         <p class="m-0">Theme Fusion</p>
@@ -88,7 +87,7 @@ export default {
 
                     </div>
                 </div>
-                <h6 class="mb-5">Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo
+                <h6 class="mb-4">Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo
                     integer sit
                     pellentesque.</h6>
                 <general-button text="Visit my YouTube channel" type="youtube"
@@ -265,14 +264,23 @@ export default {
 #youtube {
     background-color: $white;
 
-    img {
+    .col-left {
+        background-image: url('../../assets/img/service15-2x.jpg');
+        background-size: cover;
+        background-position: top center;
         border-radius: 0 0 20% 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 50px;
+
     }
 
     .col-right {
         padding-left: 4rem;
         padding-right: 4rem;
-        padding-top: 10rem;
+        padding-top: 5rem;
+        padding-bottom: 7rem;
 
         h5 {
             font-size: 1.5rem;
