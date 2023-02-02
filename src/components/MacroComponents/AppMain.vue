@@ -1,21 +1,25 @@
 <script>
-import FirstSectionCard from '../MicroComponents/FirstSectionCard.vue';
+import ReviewCard from '../MicroComponents/ReviewCard.vue';
 import PartnersCard from '../MicroComponents/PartnersCard.vue';
 import BlogCard from '../MicroComponents/BlogCard.vue';
 import TeamCard from '../MicroComponents/TeamCard.vue';
 import PlaylistCard from '../MicroComponents/PlaylistCard.vue'
 import GeneralButton from '../MicroComponents/GeneralButton.vue';
 import PlayButton from '../MicroComponents/PlayButton.vue';
+import InputBar from '../MicroComponents/InputBar.vue'
 import { challengeCard, partnersCard, articlesBlog, teamCard, playlistCard } from '../../assets/data';
 export default {
     name: 'AppMain',
-    components: { FirstSectionCard, PartnersCard, BlogCard, TeamCard, PlaylistCard, GeneralButton, PlayButton },
-    data() { return { challengeCard, partnersCard, articlesBlog, teamCard, playlistCard } },
+    components: { ReviewCard, PartnersCard, BlogCard, TeamCard, PlaylistCard, GeneralButton, PlayButton, InputBar },
+    data() { return { challengeCard, partnersCard, articlesBlog, teamCard, playlistCard, emailEntered: '' } },
     props: {
     },
     computed: {
     },
     methods: {
+        updateMail(mail) {
+            this.emailEntered = mail;
+        }
     },
 }
 
@@ -24,12 +28,11 @@ export default {
 <template>
     <main>
 
-        <!-- First Section -->
+        <!-- Review Section -->
         <section id="review">
             <div class="container text-center">
                 <div class="row row-cols-3 px-5 pb-5">
-                    <first-section-card v-for="card in this.challengeCard" :key="card.id"
-                        :item="card"></first-section-card>
+                    <review-card v-for="card in this.challengeCard" :key="card.id" :item="card"></review-card>
                 </div>
                 <div class="review px-5">
                     <h3 class="pb-3">“How you respond to the challenge in the second half will determine what you become
@@ -45,7 +48,7 @@ export default {
                 </div>
             </div>
         </section>
-        <!-- End First Section -->
+        <!-- End Review Section -->
 
         <!-- Youtube Section -->
         <section id="youtube" class="d-flex">
@@ -108,9 +111,10 @@ export default {
                     <div class="col-8 py-5">
                         <h2 class="mb-4">Join our mailing list today</h2>
                         <h1 class="mb-4">Insider offers & flash sales in your inbox every week.</h1>
-                        <i class="fa-solid fa-wave-square mb-4"></i>
-                        <p>QUI CI VA IL FORM</p>
-                        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet,
+                        <i class="fa-solid fa-wave-square mb-5"></i>
+                        <input-bar placeholder="Insert your email...*" @mail-has-change="updateMail"></input-bar>
+                        <p class="mt-5">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit
+                            amet,
                             consectetur adipiscing elit sed porttitor lectus.</p>
                     </div>
                 </div>
@@ -300,9 +304,9 @@ export default {
 }
 
 #newsletter {
-    background-image: linear-gradient(90deg, $black 45%, rgba(6, 6, 7, 0) 70%), url(../../assets/img/banner1-2x.jpg);
+    background-image: linear-gradient(90deg, $black 35%, rgba(6, 6, 7, 0) 60%), url(../../assets/img/banner1-2x.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: top right;
     padding-top: 7rem;
     padding-bottom: 7rem;
 

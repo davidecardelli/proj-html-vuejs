@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'FirstSectionCard',
+    name: 'ReviewCard',
     components: {},
     data() {
         return {}
