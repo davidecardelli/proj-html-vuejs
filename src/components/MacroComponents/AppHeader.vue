@@ -31,6 +31,16 @@ export default {
                     <li class="ms-3">
                         <general-button text="Schedule a workout"></general-button>
                     </li>
+                    <li class="ms-4">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                    <li class="ms-4">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
