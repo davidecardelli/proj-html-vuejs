@@ -1,7 +1,8 @@
 <script>
+import PlayButton from './PlayButton.vue'
 export default {
     name: 'PlaylistCard',
-    components: {},
+    components: { PlayButton },
     data() {
         return {}
     },
@@ -23,7 +24,10 @@ export default {
 
 <template>
     <div class="col">
-        <img :src="getImageUrl" :alt="item.link" class="img-fluid mb-3">
+        <div class="position-relative">
+            <img :src="getImageUrl" :alt="item.link" class="img-fluid mb-3">
+            <play-button size="small" position="absolute"></play-button>
+        </div>
         <div class="article-content">
             <a href="#">
                 <h6 class="mb-1">{{ item.title }}</h6>

@@ -5,10 +5,11 @@ import BlogCard from '../MicroComponents/BlogCard.vue';
 import TeamCard from '../MicroComponents/TeamCard.vue';
 import PlaylistCard from '../MicroComponents/PlaylistCard.vue'
 import GeneralButton from '../MicroComponents/GeneralButton.vue';
+import PlayButton from '../MicroComponents/PlayButton.vue';
 import { challengeCard, partnersCard, articlesBlog, teamCard, playlistCard } from '../../assets/data';
 export default {
     name: 'AppMain',
-    components: { FirstSectionCard, PartnersCard, BlogCard, TeamCard, PlaylistCard, GeneralButton },
+    components: { FirstSectionCard, PartnersCard, BlogCard, TeamCard, PlaylistCard, GeneralButton, PlayButton },
     data() { return { challengeCard, partnersCard, articlesBlog, teamCard, playlistCard } },
     props: {
     },
@@ -49,7 +50,10 @@ export default {
         <!-- Youtube Section -->
         <section id="youtube" class="d-flex">
             <div class="col-6">
-                <img src="../../assets/img/service15-2x.jpg" alt="Youtube Video" class="img-fluid">
+                <div class="position-relative">
+                    <img src="../../assets/img/service15-2x.jpg" alt="Youtube Video" class="img-fluid">
+                    <play-button size="medium" position="absolute"></play-button>
+                </div>
             </div>
             <div class="col-6 col-right">
                 <h5 class="mb-5">Tune up your workouts</h5>

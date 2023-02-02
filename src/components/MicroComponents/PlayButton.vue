@@ -7,6 +7,7 @@ export default {
     },
     props: {
         size: String,
+        position: String,
     },
     computed: {
     },
@@ -20,7 +21,7 @@ export default {
 
 <template>
     <a href="#">
-        <i class="fa-solid fa-circle-play primary" :class="size"></i>
+        <i class="fa-solid fa-circle-play primary" :class="[size, position]"></i>
     </a>
 </template>
 
@@ -36,6 +37,13 @@ export default {
         transition: all 0.5s;
     }
 
+    &.absolute {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     &:hover {
         background-color: $red;
     }
@@ -44,7 +52,7 @@ export default {
         font-size: 4rem;
     }
 
-    &.smaill {
+    &.small {
         font-size: 2rem;
     }
 }
