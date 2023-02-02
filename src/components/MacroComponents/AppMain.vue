@@ -39,9 +39,12 @@ export default {
         <!-- Review Section -->
         <section id="review">
             <div class="container text-center">
-                <div class="row row-cols-3 px-5 pb-5">
-                    <review-card v-for="card in this.challengeCard" :key="card.id" :item="card"></review-card>
+                <div class="position-relative">
+                    <div class="row row-cols-3 px-5 absolute">
+                        <review-card v-for="card in this.challengeCard" :key="card.id" :item="card"></review-card>
+                    </div>
                 </div>
+
                 <div class="review px-5">
                     <h3 class="pb-3">“How you respond to the challenge in the second half will determine what you become
                         after the
@@ -217,6 +220,12 @@ export default {
     background: linear-gradient(130deg, $blue, $red);
     padding-top: 7rem;
     padding-bottom: 7rem;
+
+    .absolute {
+        position: absolute;
+        bottom: 150px;
+        left: 0;
+    }
 
     .row {
         position: relative
