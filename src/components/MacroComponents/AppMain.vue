@@ -389,7 +389,7 @@ export default {
 
 #workout-of-the-day {
     .jumbotron {
-        background-image: linear-gradient(150deg, rgba(65, 84, 255, 0.6) 35%, rgba(255, 65, 75, 0.6) 100%), url(../../assets/img/banner14-2x.jpg);
+        background-image: linear-gradient(150deg, rgba(0, 155, 014, 0.4) 35%, rgba(255, 65, 75, 0.6) 100%), url(../../assets/img/banner14-2x.jpg);
         background-size: cover;
         background-position: bottom center;
         padding-top: 7rem;
