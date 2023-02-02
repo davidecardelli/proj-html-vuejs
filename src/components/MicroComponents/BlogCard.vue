@@ -23,7 +23,7 @@ export default {
 
 <template>
     <div class="col">
-        <img :src="getImageUrl" :alt="item.link" class="img-fluid mb-3">
+        <img :src="getImageUrl" :alt="item.title" class="img-fluid mb-3">
         <div class="article-content">
             <a href="#">
                 <h6 class="mb-1">{{ item.title }}</h6>

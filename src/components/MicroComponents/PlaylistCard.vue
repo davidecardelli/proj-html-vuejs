@@ -28,7 +28,7 @@ export default {
 <template>
     <div class="col">
         <div class="position-relative">
-            <img :src="getImageUrl" :alt="item.link" class="img-fluid mb-3">
+            <img :src="getImageUrl" :alt="item.title" class="img-fluid mb-3">
             <play-button size="small" position="absolute" @play-button-click="playVideo"></play-button>
         </div>
         <div class="article-content">
