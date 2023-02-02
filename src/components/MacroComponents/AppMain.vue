@@ -21,6 +21,10 @@ export default {
             this.emailEntered = mail;
         },
 
+        sendMail() {
+            console.log(`Invia al backend questa email ${this.emailEntered}`)
+        },
+
         playVideo() {
             console.log('Play Video')
         }
@@ -116,7 +120,8 @@ export default {
                         <h2 class="mb-4">Join our mailing list today</h2>
                         <h1 class="mb-4">Insider offers & flash sales in your inbox every week.</h1>
                         <i class="fa-solid fa-wave-square mb-5"></i>
-                        <input-bar placeholder="Insert your email...*" @mail-has-change="updateMail"></input-bar>
+                        <input-bar placeholder="Insert your email...*" @mail-has-change="updateMail"
+                            @submit-form="sendMail"></input-bar>
                         <p class="mt-5">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit
                             amet,
                             consectetur adipiscing elit sed porttitor lectus.</p>
