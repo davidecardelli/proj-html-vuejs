@@ -1,9 +1,10 @@
 <script>
 import { headerMenu } from '../../assets/data';
 import Logo from '../MicroComponents/Logo.vue';
+import GeneralButton from '../MicroComponents/GeneralButton.vue';
 export default {
     name: 'AppHeader',
-    components: { Logo },
+    components: { Logo, GeneralButton },
     data() {
         return { headerMenu }
     },
@@ -26,6 +27,9 @@ export default {
                     <li v-for="voice in this.headerMenu" :key="voice.id">
                         <a :href="voice.url" class="ms-3" :class="{ 'selected': voice.current }">{{ voice.text }}</a>
                         <span v-if="voice.isNew" class="is-new ms-2">new</span>
+                    </li>
+                    <li class="ms-3">
+                        <general-button text="Schedule a workout"></general-button>
                     </li>
                 </ul>
             </nav>
