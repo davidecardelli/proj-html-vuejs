@@ -2,9 +2,10 @@
 import { headerMenu } from '../../assets/data';
 import Logo from '../MicroComponents/Logo.vue';
 import GeneralButton from '../MicroComponents/GeneralButton.vue';
+import PlayButton from '../MicroComponents/PlayButton.vue';
 export default {
     name: 'AppHeader',
-    components: { Logo, GeneralButton },
+    components: { Logo, GeneralButton, PlayButton },
     data() {
         return { headerMenu }
     },
@@ -60,7 +61,7 @@ export default {
                         </div>
                     </div>
                     <div class="col-4 d-flex align-items-center justify-content-center">
-                        PLAY
+                        <play-button></play-button>
                     </div>
                 </div>
             </div>
