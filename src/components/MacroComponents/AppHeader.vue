@@ -42,6 +42,12 @@ export default {
                         <h1 class="mb-4">Take control of your health</h1>
                         <i class="fa-solid fa-wave-square mb-4"></i>
                         <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</p>
+                        <div class="d-flex align-items-center gap-2">
+                            <general-button text="Visit my YouTube channel" size="big"
+                                before="fa-brands fa-youtube"></general-button>
+                            <general-button text="Buy Avada today" type="secondary" size="big"
+                                after="fa-solid fa-arrow-right"></general-button>
+                        </div>
                     </div>
                     <div class="col-4 d-flex align-items-center justify-content-center">
                         PLAY
