@@ -179,8 +179,8 @@ export default {
         <section id="workout-of-the-day">
             <div class="jumbotron">
                 <div class="content-jumbotron text-center">
-                    <p>PLAY</p>
-                    <h2 class="mb-4">Crossfit workout of the day</h2>
+                    <play-button></play-button>
+                    <h2 class="mt-4 mb-4">Crossfit workout of the day</h2>
                     <h3 class="mb-4">November 15th, 2019</h3>
                     <a href="#">
                         <span>View all videos</span>
