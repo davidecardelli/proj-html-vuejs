@@ -1,8 +1,8 @@
 <script>
 import { headerMenu } from '../../assets/data';
-import Logo from '../MicroComponents/Logo.vue';
-import GeneralButton from '../MicroComponents/GeneralButton.vue';
-import PlayButton from '../MicroComponents/PlayButton.vue';
+import Logo from '../microcomponents/Logo.vue';
+import GeneralButton from '../microcomponents/GeneralButton.vue';
+import PlayButton from '../microcomponents/PlayButton.vue';
 export default {
     name: 'AppHeader',
     components: { Logo, GeneralButton, PlayButton },

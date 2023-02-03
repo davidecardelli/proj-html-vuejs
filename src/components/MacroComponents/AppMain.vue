@@ -1,12 +1,12 @@
 <script>
-import ReviewCard from '../MicroComponents/ReviewCard.vue';
-import PartnersCard from '../MicroComponents/PartnersCard.vue';
-import BlogCard from '../MicroComponents/BlogCard.vue';
-import TeamCard from '../MicroComponents/TeamCard.vue';
-import PlaylistCard from '../MicroComponents/PlaylistCard.vue'
-import GeneralButton from '../MicroComponents/GeneralButton.vue';
-import PlayButton from '../MicroComponents/PlayButton.vue';
-import InputBar from '../MicroComponents/InputBar.vue'
+import ReviewCard from '../microcomponents/ReviewCard.vue';
+import PartnersCard from '../microcomponents/PartnersCard.vue';
+import BlogCard from '../microcomponents/BlogCard.vue';
+import TeamCard from '../microcomponents/TeamCard.vue';
+import PlaylistCard from '../microcomponents/PlaylistCard.vue'
+import GeneralButton from '../microcomponents/GeneralButton.vue';
+import PlayButton from '../microcomponents/PlayButton.vue';
+import InputBar from '../microcomponents/InputBar.vue'
 import { challengeCard, partnersCard, articlesBlog, teamCard, playlistCard } from '../../assets/data';
 export default {
     name: 'AppMain',

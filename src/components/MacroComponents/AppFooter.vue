@@ -1,5 +1,5 @@
 <script>
-import Logo from '../MicroComponents/Logo.vue';
+import Logo from '../microcomponents/Logo.vue';
 import { social, recentPost } from '../../assets/data';
 export default {
     name: 'AppFooter',
